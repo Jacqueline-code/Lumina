@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina|Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      .social-icons i, .social-icon svg { color: #425762; fill: #0a7494; width: 30px; height: 30px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container" style="display:flex;align-items: center;justify-content: space-between;">
+            <div class="brand">
+                <img src="IMAGES/logo.png" alt="logo">
+                <div>
+                    <div class="title" style="font-weight: 800;color: var(--blue-1);">Lumina</div>
+                    <div class="tag" small style="color: var(--muted);">Free Learning, Together
+                    </div>
+                </div>
+            </div>
+           <nav class="nav" aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <section class="card">
+        <h2 style="margin: 0 0 8px 0;color: var(--blue-1);">Find resources</h2>
+        <p style="margin: 0 0 12px 0;color: var(--muted);">Browse by subject, then pick the type (notes,videos, tutorials, quizzes)</p>
+
+        <!--subject pills-->
+        <div class="pills" role="tablist" aria-label="Subjects">
+            <a class="pill" href="#math" role="tab">Mathematics</a>
+            <a class="pill" href="#programming" role="tab">Programming</a>
+            <a class="pill" href="#business" role="tab">Business</a>
+            <a class="pill" href="#literature" role="tab">Literature</a>
+        </div>
+
+        <!--tabs for resource type-->
+        
+            <div style="margin-top: 8px;" id="math" aria-labelledby="math" >
+                <h3 style="margin: 0 0 8px 0;color: var(--blue-1);">Mathematics</h3>
+                <div class="grid">
+                    <article class="resource">
+                        <h4>Calculus 1 - Notes (PDF)</h4>
+                        <p>Limits, derivatives, integrals, examples & practice problems.</p>
+                        <div class="meta"><span>PDF . 28pages</span><span><a href="IMAGES/calculus notes.pdf" style="color: var(--blue-2);">Download</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>Linear Algebra - Tutorial</h4>
+                        <p>Vectors, matrices, systems of equations with step-by step examples.</p>
+                        <div class="meta"><span>Tutorial . Text</span><span><a href="IMAGES/linear notes.pdf" style="color: var(--blue-2);">Open</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>Calculus Quiz</h4>
+                        <p>Multiple choice practice to test fundamental calculus skills.</p>
+                        <div class="meta"><span>Quiz . 10 questions</span><span><a href="IMAGES/calculus test.pdf" style="color: var(--blue-2);">Attempt</a></span></div>
+                    </article>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px;" id="programming" aria-labelledby="programming">
+                <h3 style="margin: 0 0 8px 0;color: var(--blue-1);">Programming</h3>
+                <div class="grid">
+                    <article class="resource">
+                        <h4>Intro to Python - Notes</h4>
+                        <p>Basics, data types, control flow, and simple projects.</p>
+                        <div class="meta"><span>PDF . 18 pages</span><span><a href="IMAGES/python-basics.pdf" style="color: var(--blue-2);">Download</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>Web Dev - Video Series</h4>
+                        <p>Short videos that explain HTML, CSS and basic JS concepts (for demos).</p>
+                        <div class="meta"><span>Videos . 6 parts</span><span><a href="IMAGES/web dev.mp4" style="color: var(--blue-2);">Watch</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>SQL Practice - Quiz</h4>
+                        <p>Test queries and reading outputs.</p>
+                        <div class="meta"><span>Quiz . 8 questions</span><span><a href="IMAGES/sql test notes.pdf" style="color: var(--blue-2);">Attempt</a></span></div>
+                    </article>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px;" id="business" aria-labelledby="business">
+                <h3 style="margin-top: 0 0 8px;color: var(--blue-1);">Business & IT</h3>
+                <div class="grid">
+                    <article class="resource">
+                        <h4>Accounting Basics - Notes</h4>
+                        <p>Key concepts, principles, and example problems.</p>
+                        <div class="meta"><span>PDF . 22 pages</span><span><a href="IMAGES/accounting notes.pdf" style="color: var(--blue-2);">Download</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>Spreadsheets - Tutorials</h4>
+                        <p>Formulas, pivot basics and common functions</p>
+                        <div class="meta"><span>Tutorial . Text</span><span><a href="IMAGES/excel notes.pdf" style="color: var(--blue-2);">Open</a></span></div>
+                    </article>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px;" id="literature" aria-labelledby="literature">
+                <h3 style="margin-top: 0 0 8px;color: var(--blue-1);">Literature</h3>
+                <div class="grid">
+                    <article class="resource">
+                        <h4>Shakespeare - Notes</h4>
+                        <p>Summaries, themes, and character analyses of major plays.</p>
+                        <div class="meta"><span>Notes</span><span><a href="IMAGES/poetry notes.pdf" style="color: var(--blue-2);">Open</a></span></div>
+                    </article>
+
+                    <article class="resource">
+                        <h4>Poetry Analysis - Video Series</h4>
+                        <p>Short videos breaking down famous poems and literary devices.</p>
+                        <div class="meta"><span>Videos . 5 parts</span><span><a href="IMAGES/poetry vid.mp4" style="color: var(--blue-2);">Watch</a></span></div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <footer class="footer">
+            Welcome to Lumina - where learning becomes a self-discovery journey. 
+            <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <!--Conatct us-->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Kampala, Uganda</li>
+                    <li>+256 780 456 223</li>
+                    <li>info@lumina.edu.org</li>
+                </ul>
+            </div>
+            <!--Follow Us-->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div class="socials">
+  <a class="social-icon" href="https://facebook.com/Lumina" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fab fa-facebook" aria-hidden="true"></i>
+    <span class="sr-only">Facebook</span>
+  </a>
+
+  <a class="social-icon" href="https://x.com/Lumina" target="_blank" rel="noopener" aria-label="X">
+    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+    <span class="sr-only">X</span>
+  </a>
+
+  <a class="social-icon" href="https://instagram.com/Lumina" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram" aria-hidden="true"></i>
+    <span class="sr-only">Instagram</span>
+  </a>
+
+  <a class="social-icon" href="https://youtube.com/Lumina" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube" aria-hidden="true"></i>
+    <span class="sr-only">YouTube</span>
+    </a>
+          </div>
+        </div>
+       </div> 
+            </div> 
+       <p class="copyright">&COPY; 2025 Lumina. All Rights Reserved.</p>
+        </footer>
+</body>
+</html>
